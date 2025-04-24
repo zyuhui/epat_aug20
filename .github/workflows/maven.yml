@@ -23,6 +23,7 @@ jobs:
       run: mvn -B test
 
   security:
+    needs: build
     name: SA scan using snyk
     runs-on: ubuntu-latest
     steps:
