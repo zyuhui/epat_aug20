@@ -1,4 +1,4 @@
-# This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
+# This workflow will scan with ZAProxy, and cache/restore any dependencies to improve the workflow execution time
 name: ZAP scan
 
 on:
@@ -10,7 +10,7 @@ on:
 jobs:
   zap_scan:
     runs-on: ubuntu-latest
-    name: Scan the webapplication
+    name: Run DAST Scan the web application
     steps:
       - name: Checkout
         uses: actions/checkout@v4
